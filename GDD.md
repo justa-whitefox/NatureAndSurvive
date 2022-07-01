@@ -160,9 +160,9 @@
 > ## RoadMap
 >
 > * Terrain
-> 	* modeling main continent and island[WIP]
-> 	* texturing main continent and island[WIP]
-> 	* upgrade to URP
+> 	* basic modeling and texturing main continent and island[Done]
+> 	* modeling and texturing main continent and island details[WIP]
+> 	* upgrade to URP[Done]
 > 	* Skybox
 >	* water
 > 	* Day Night Cycle[OnSearch]
@@ -210,8 +210,11 @@
 >		* tips and advice/info display, page 11
 >		* option/title, page 12
 >			* configurations/button, page 12 --> page 3
+>			* Achievements/button, page 12 --> page 13
 >			* Main menu/button, page 12 --> Main menu/book cover
 >			* Exit/button, page 12 --> exit game
+>		* achievements/title
+>			* undefined
 > 		
 > * Environment
 > 	* Dynamic Chopable trees[OnSearch]
@@ -266,6 +269,9 @@
 > * IA
 > 	* natives IA
 > 	* fauna IA
+>
+> * Achievements and trophies
+> 	* Undefined
 > 	
 > * Optimization
 > 	* batch materials
