@@ -1,0 +1,9 @@
+	TILE Layer     				||    X Axis     || 		Y Axis
+	Tile 							  20480	 			     20480
+	Tile 0							  10240                  10240
+	Tile 0 0  						  5120                   5120
+	Tile 0 0 0  					  2560                   2560
+	Tile 0 0 0 0  					  1280                   1280
+	Tile 0 0 0 0 0  				  640                    640
+	Tile 0 0 0 0 0 0  				  320                    320
+	Tile 0 0 0 0 0 0 0  			  160                    160
