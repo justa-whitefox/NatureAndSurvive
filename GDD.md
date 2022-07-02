@@ -1,7 +1,10 @@
 # GAME DESIGN DOCUMENT
+---------------------------------------------------------------------------------------------------
 
 > ## Nomenclatures and Initials
-> * PC: Player Character
+> -------------------------------------------------------------------------------------------------
+>
+> * PC: Playable Character
 > * native: game npcs
 > * flora: all kind of flower, trees etc.
 > * fauna: all kind of non-npc, non-flora creatures, including passive, neutral and aggressive animals.
@@ -9,6 +12,7 @@
 > * project state: WIP = Work in Progress, Queue = on Queue list, Done = Finished, OnSearch = mechanic being searched
 
 > ## game details
+> -------------------------------------------------------------------------------------------------
 >
 > >	### terrain
 > >
@@ -54,7 +58,7 @@
 > >
 > >	* Player Creation
 > >		* the PC can choose between 12 characters with differents traits,
-> >		* the start point must be different to every character
+> >		* the start and backstory must be different to every character
 > >
 > >	* Save
 > >		* auto-save
@@ -72,32 +76,7 @@
 > >		* all world characters will be mute
 > >		* punitive combat, 
 > >		* permaDeath, with 1 respawn(cutscene of been rescued), easy mode with no limit to respawn gived as a choice in the beginning of the game
->	
-> > ### storyline
-> >
-> > * you, just a normal human bean, chill in your home, are just resting in your restroom when a global catastrophe come down,
-> > * you quickly search for shelter, when notice, the beatiful and dangerous radiative light tint your windows with a growing green,
-> > * you turn on the TV and see in every chanel warning about a radiative disaster across the earth, 
-> > * you get closer to the windown to hear more clearly the roar of the thunder, the scream of the wind, and the grumbles and growls of the storm,
-> > 
-> >	* -----!> susceptible to changes
-> > * you run down your stairs to the basement to get somehow save from the catastrophic radiative rain outhere, and ...
-> > * <!----
-> > 
-> > * you awake and the first thing you notice is the chaos in the basement, everything broken and torn around,
-> > * you then decide to go up the stairs,	
-> > * and then you notice: everything has changed, the only thing left of your house is the floor and a few wall but something feels wrong,
-> > * you notice that ... the walls and floors look so old, just like centures has passed,
-> > * the wall has moss growing in all it's surface, there is hude trees at the horizon and grass everywhere,
-> > * you don't know what hapen, but you instictively know: there is no come back, you will have to find the answer by yourself!.
 >
-> > ### worldBuilding
-> >
-> >	* The has been destroyed by an Radiative catastrophe with unknown origin,
-> >	* The catastrophe mutate the fauna to growth bigger, stronger, faster, smarter,
-> >	* The flora grows bigger and spread all across the continent without anything to stop it,
-> >	* Only a small number of humanoids survive and thoses, now live in hude walled citys or spreat across the continent,
->						
 > > ### Environment
 > >
 > >	* Biomes:
@@ -126,31 +105,37 @@
 > >		* Aspen Trees 
 > >			* live for 40 ~ 150 years, 15 ~ 30m tall,	  
 > >			* has brights yellowish ~ deep red leaves in the autumn, and white barks with black marks,	  
-> >			* cold biomes, and regions as taiga.
+> >			* Taiga and rainForest.
 > >			* common
 > >					 
 > >		* Pine Trees  
 > >			* live for 100 ~ 1000 years, 30 ~ 50m tall,
 > >			* has brownish ~ redish bark, with needle-like leaves that varies from 6 - 30cm long, with pine frutes that varies on color between greenish ~ brownish pended on, 
-> >			* from more neutral temperatures to cold biomes like taiga
+> >			* Taiga, rainforest and tropical forest
 > >			* common					 
 > >					  
 > >		* Ebony Trees 
 > >			* live for 60 ~ 200 years, reaches a height of 20 ~ 30m,
 > >			* has thick bark wich varies in color between whitish brawn ~ dark brown, and a dense black hardwood.
-> >			* native to warm and arid regions, apear also in tropical forests.
+> >			* tropical forest.
 > >			* Rare
 > >		
 > >		* Oak Trees   
 > >			*
 > >			*
+> >			* rainForest and tropical forest
+> >			* common
+> >
+> >		* Banana Trees
 > >			*
+> >			*
+> >			* beach
 > >			* common
 > >					  
 > >		* Cherry Trees
 > >			* live for 30 ~ 40 years, usualy 10m tall with branchs 3.5 ~ 4.5m Wide,
 > >			* has a dark brown bark with white ~ pinkish flower and leaves that only blossom in spring,
-> >			* tropical climates with middle latitude.
+> >			* tropical forest.
 > >			* Extreme Rare
 > >					  
 > >	* Fauna:
@@ -158,66 +143,22 @@
 >	
 	
 > ## RoadMap
+> -------------------------------------------------------------------------------------------------
 >
 > * Terrain
 > 	* basic modeling and texturing main continent and island[Done]
-> 	* modeling and texturing main continent and island details[WIP]
 > 	* upgrade to URP[Done]
 > 	* Skybox
 >	* water
 > 	* Day Night Cycle[OnSearch]
 > 	* Seasons
 >	* whether[OnSearch]
+>	* Chunk/Tile split
+> 	* detailing land models in each chunk/tile[WIP]
+>
+> * Environment
 >	* Grass[OnSearch]
 > 	* Trees[OnSearch]
->	* Chunk/Tile split
-> 		
-> * Player
-> 	* player controller
-> 	* player interaction
-> 	* player reactions
-> 	* player stat buffs and debuffs
-> 		
-> * UI
-> 	* Main Menu/Title, book cover
->	* New Save/button, book Cover --> page 1
->			 * select a character/selection screen, page 1
->
-> 	* Continue/button, book cover --> page 2
->			 * select save/button, page 2
->
-> 	* Configurations/button, book cover --> page 3
->			 * Master Volume/slider, page 3
->			 * BGM Volume/slider, page 3
->			 * VFX Volume/slider, page 3
->			 * Screen Resolution/dropdown menu, page 3
-> 			 * input manager/button page 3 --> page 4
->				* controller menu/controller sets, page 4
->
->	* Exit/button, book cover --> exit game
->
-> 	* In-Game Menu
->		* character sheets/info display, page 5
->		* skills/info display, page 6
->		* inventory/interactive info display, page 7
->			* the interaction with the equipment will be done with notes-like pop-up, like: equip or discart
->
->		* equipment/info display, page 8
->			* areas able to be equiped: head, neck, upper body, low body, feet, hand, wrist, fingers
->
->		* status/info display, page 9
->		* map/info display, page 10
->		* tips and advice/info display, page 11
->		* option/title, page 12
->			* configurations/button, page 12 --> page 3
->			* Achievements/button, page 12 --> page 13
->			* Main menu/button, page 12 --> Main menu/book cover
->			* Exit/button, page 12 --> exit game
->		* achievements/title
->			* undefined
-> 		
-> * Environment
-> 	* Dynamic Chopable trees[OnSearch]
 > 	* bushes
 > 	* stones
 > 	* ores
@@ -230,7 +171,144 @@
 >	* commercial buildings(shopping, etc)
 >	* work buildings(forges, etc)
 >	* mines
+>	* caves system
 > 		
+> * Player
+> 	* player controller
+> 	* player interaction
+> 	* player reactions, HUD effects
+> 	* player stat buffs and debuffs
+> 		
+> * User Interface
+> 	* Book Cover/
+>		> Main Menu/Title
+>		> New Game/Button --> page 1
+>		> Continue/Button --> page 2
+>		> Configurations/Button --> page 3
+>		> Exit/Button --> Exit Game
+>
+>	* Page 1
+>		> Select character/Selection Screen
+>		> Select Difficult/Selection Buttons
+>			* cannot be changed later
+>			* normal mode: how the game was created to be, you only have 1 live, save deleted after game over 
+>			* easy mode: you can respawn infinitely
+>
+>	* page 2
+>		> Continue/TItle
+>		> Select Save/Selection Menu
+>
+>	* page 3
+>		> Configurations/Title
+>		> Master Volume/Slider
+>		> BGM Volume/Slider 
+>		> VFX Volume/Slider 
+>		> Screen Resolution/Dropdown Menu 
+>		> Input Manager/Button --> Page 4
+>
+> 	* page 4
+>		> Controllers/title
+>		> Move Forward/Dropdown
+>		> Move Backward/Dropdown
+>		> Move Rightward/Dropdown
+>		> Move Leftward/Dropdown
+>		> Jump/Dropdown
+>		> ETC to complete
+>
+>	* page 5
+>		> Character Sheets/Title
+>		> Name/Info Display
+>		> Age/Info Display
+>		> Gender/Info Display
+>		> Weight/Info Display
+>		> Height/Info Display
+>		> Trait/Info Display
+>
+>	* page 6
+>		> Skills/Title
+>		> Athletics/Info Display
+>		> Dexterity/Info Display
+>		> Medicine/Info Display
+>		> Forge/Info Display
+>		> HandCraft/Info Display
+>		> Sneak/Info Display
+>		> Self-Defence/Info Display
+>		> Cook/Info Display
+>		> Mine/Info Display
+>		> LumberJack/Info Display
+>		> Hunt/Info Display
+>
+> 	* page 7
+>		> Inventory/Title
+>		> Pocket/SubTitle and Weight limit of pocket
+>		> |_Nature&Survive__  / Inventory space ocuped by book
+>		> |_________________  / Free Inventory Space
+>		> |_________________  / The Pocket inventory has 6 slots
+>		> |_________________
+>		> |_________________
+>		> |_________________
+>		> BackPack/SubTitle and Weight limit of backpack
+>		> |_________________  / Free Inventory space
+>		> |_________________  / The Backpack Inventory has at least 10 slots 
+>		> |_________________  / The slots only end when the weight limit is reached
+>		> |_________________
+>
+>	* page 8
+>		> Equipment/Title
+>		> |___Eyes_Slot__  	   (**)		> |__Head_Slot__
+>		> |___Neck_Slot__		|
+>		> |Backpack_Slot_	   /|\		> |__Torso_Slot_
+>							  / | \
+>		> |__Wrist_Slot__	 /  |  \	> |__belt_Slot__
+>		> |_Finger_Slot__	/   |   \ 	> |__Hand_Slot__
+>							   / \
+>							  /   \		> |__Legs_Slot__
+>		> |__Feet_Slot___  __/     \__
+>		> Statistics/SubTitle
+>		> Weight/Info Display			> Cut Resistence/Info Display
+>		> Cold Resistence/Info Display	> Blunt Resistence/Info Display
+>
+> 	* page 9
+>		> Status/Title
+>		> Hidratation/Info Display 		> Head/Info Display
+>		> Hunger/Info Display			> Sight/Info Display
+>		> Physic Cond./Info Display		> hearing/Info Display
+>		> Rest/Info Display 			> Torso/Info Display
+>		> Health/Info Display 			> Right Arm/Info Display
+>										> Left Arm/Info Display
+>										> Right Leg/Info Display
+>										> Left Leg/Info Display
+>
+>	* page 10
+>		> Map/Title
+>		> Map/Image
+>		> Symbols/Descripiton Display
+>	
+>	* page 11
+>		> Tips and advice/Title
+>		> WASD to Move/Tutorial Display
+>		> [___] to Jump/Tutorial Display
+>		> Shift to Run/Tutorial Display
+>		> Ctrl to sneak/Tutorial Display
+>		> <- () -> to Look/Tutorial Display
+>		> RMB to Interact/Tutorial Display
+>		> LMB to Attack/Tutorial Display
+>		> TAB to access In-Game Menu/Tutorial Display
+>		> hide if you hear steps in the woods/Tips Display
+>		> don't go to far in the forests/Tips Display
+>
+>	* page 12
+>		> Option/Title
+>		> Achievements/Button --> page 13
+>		> Configurations/Button --> page 3
+>		> Main Menu/Button --> Book Cover
+>		> Exit/Button --> Exit Game
+>
+>	* page 13
+>		> Achievements/Title
+>		> undefined/text with checkbox
+> 		
+>
 > * Objects
 > 	* refined ores
 > 	* armours
@@ -250,9 +328,9 @@
 > 	* Sneeak
 > 	* self-defence
 > 	* medicine
-> 	* mine
-> 	* chop
-> 	* hunt(with bow)
+> 	* mining
+> 	* choping
+> 	* hunting(with bow)
 > 		
 > 		
 > * animation
@@ -277,3 +355,14 @@
 > 	* batch materials
 > 	* clean unused edge, vertices and overlaping faces on models
 > 		
+
+> ## WorldBuilding
+> -------------------------------------------------------------------------------------------------
+>
+> ### World Timeline
+> 
+>
+> ### Characters Backstory
+>
+>
+>
