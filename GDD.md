@@ -16,13 +16,13 @@
 >
 > >	### terrain
 > >
-> >	* 1 main continent, named: Azure Continent, with the botton covered with tropical forest, the botton and mid border rounded by beachs, the center point when reside the only
+> >	* 1 main continent, named: Azure Continent, with the botton covered with tropical forest, the botton and mid border rounded by beachs, the center point is when reside the only
 > >     big city is a grass plain surrounded by rainforest, and the top of the continent gradualy swifting between taiga to snowy mountains.
-> >	* 1 small continent, named: Forbidden Continent, half of the continent is covered by taiga and the other half by snowy Mountains, with strong and fast creatures roaming 
+> >	* 1 Island, named: Forbidden Island, half of the continent is covered by taiga and the other half by snowy Mountains, with strong and fast creatures roaming 
 > >     around the hole continent.
 > >	* separated in chunks/tiles to improve performance
 > >	* GameMap: 419^2km(20.5km X 20.5km), 1 small continent, 1 small island.
-> >	* main continent: 126.31^2km || 10.88km X 11.61km, 1 main city, 4 villages,
+> >	* main continent: 126.31^2km || 10.88km X 11.61km, 1 main city, 2 villages and 2 underground villages,
 > >	* small island: 6.46^2km || 2.36km X 2.74km, no citys, no villages,
 > >	* Biomes: rainforest, tropical forest, taiga, mountains, snowy mountains, grass plains,
 > >	* Danger Zones: based on how far they are of the city,
@@ -33,7 +33,7 @@
 > >	* small villages spread across the continent,
 > >	* 1 main bigger city in the center of the main continent, named: vermilion, the city of steel,
 > >	* 2 villages citys-like spread across the main continent around the main city,
-> >	* 2 villages house-tree like spread across the continent in the densest forests,
+> >	* 2 UnderGround villages accessed by the mines, with a cave system underground the main continent,
 > > * 4 mines going in the mountains, source of ores for the main city.
 >			
 > > ### Humanoid Characters Characteristics
@@ -148,8 +148,8 @@
 > * Terrain
 > 	* basic modeling and texturing main continent and island[Done]
 > 	* upgrade to URP[Done]
-> 	* Skybox
->	* water
+> 	* Skybox[WIP]
+>	* water[OnSearch]
 > 	* Day Night Cycle[OnSearch]
 > 	* Seasons
 >	* whether[OnSearch]
@@ -163,15 +163,16 @@
 > 	* stones
 > 	* ores
 > 	* mushrooms
+>	* Cave System
 >
 > * Buildings
 >	* city(base area, wall)
 >	* villages(base area, fence)
+>	* underground villages
 >	* houses
 >	* commercial buildings(shopping, etc)
 >	* work buildings(forges, etc)
 >	* mines
->	* caves system
 > 		
 > * Player
 > 	* player controller
@@ -319,7 +320,7 @@
 > * characters
 > 	* 12 Playable Characters
 > 	* Natives
-> 	* Unique Characters
+> 	* Underground natives
 > 	* Fauna
 > 		
 > * mechanics
